@@ -1,7 +1,5 @@
 import 'package:aplicacion_contador/presentation/counter_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:aplicacion_contador/presentation/counter_screen.dart';
-
 void main() {
   runApp(const MyApp());
 }

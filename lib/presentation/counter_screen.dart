@@ -64,7 +64,7 @@ class _CounterScreenState extends State<CounterScreen> {
 
 
   clickPlusOne() {
-    setState(() {
+    setState(() {//if
       clickCounter++;
     });
   }

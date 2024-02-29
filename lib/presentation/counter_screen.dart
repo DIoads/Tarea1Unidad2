@@ -1,3 +1,4 @@
+import 'package:aplicacion_contador/presentation/components/buttons.dart';
 import 'package:flutter/material.dart';
 
 class CounterScreen extends StatefulWidget {
@@ -59,11 +60,9 @@ class _CounterScreenState extends State<CounterScreen> {
     );
   }
 
-  Widget btnPlusOne({required void Function() onPress, required Icon icono}) =>
-      FloatingActionButton(
-        onPressed: onPress,
-        child: icono,
-      );
+  
+
+
   clickPlusOne() {
     setState(() {
       clickCounter++;
@@ -72,7 +71,10 @@ class _CounterScreenState extends State<CounterScreen> {
 
   clickMinusOne() {
     setState(() {
+      if(clickCounter>0){
       clickCounter--;
+
+      }
     });
   }
 
